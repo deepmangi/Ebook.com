@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+<title>Book Listing Page</title>
+<link rel='stylesheet' href='style2.css' type='text/css' media='all' />
+
+
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style3.css">
+
+    <!--SEARCH BAR-->
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+   <!-- Including our scripting file. -->
+   <script type="text/javascript" src="scripts1.js"></script>
+  
+    
+</head>
+<body>
+    
+
+<!-- header section starts  -->
+
+<header>
+    
+<div class="container">
+
+    <a href="#" class="logo"><img src="LOGO.png">
+
+    <nav class="nav">
+        <ul>
+            <li><a href="home.php" opacity="0">Home</a></li>
+            <li><a onclick="location.href = 'logout.php';" opacity="0">Logout</a></li>
+            <li><a href="#home" opacity="0">About</a></li>
+            <!--Cart-->
+	
+    <li>
+    <div class="cart_div">
+    <a href="cart.php"><img src="cart-icon.png" /> Cart</a>
+    </div>
+    </li>
+</ul>
+</nav>
+</a>
+</div>
+</header>
+
+
+<main>
+
+    <div class="product_wrapper">
+        <img src="b1.jpg" width="300" height="450" alt="Birth">
+        <div>
+        <h1 class="name">Birth</h1>
+        <span class="price">
+        250 Rs/- </span>
+        <form action="index.php?page=cart" method="post">
+        <input type="number" name="quantity" value="1" min="1" max="23" placeholder="Quantity" required="">
+        <input type="hidden" name="product_id" value="3">
+       <a><button class="button">Buy Now</button></a> 
+        </form>
+        <div class="description">
+        </div>
+        </div>
+        </div>
+        
+        
+</main>
+<footer>
+
+</footer>
+
+</body>
+</html>

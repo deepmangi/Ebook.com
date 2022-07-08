@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,Arial,sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+head {
+    display: none;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    color: #555;
+    background:#c9def0;
+    margin: 0;
+    padding-bottom: 100px;
+}
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/**/
+
+.logo { 
+    width:100px;
+    height:50px;
+    text-align:center;
+  }
+
+.logo img {
+    height:100%;
+  }
+
+.product_wrapper {
+	margin-left: 600px;
+    margin-top: 100px;
+	padding: 25px;
+	text-align: center;
+	}
+.product_wrapper:hover {
+	box-shadow: 0 0 0 2px red;
+	cursor:pointer;
+	}
+.product_wrapper .name {
+	font-weight:bold;
+	}
+
+    .button{
+        height:3.5rem;
+        width: 15rem;
+        background:var(--red);
+        color:#fff;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        border-radius: .5rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        margin:1rem 0;
+      }
+      
+      .button::before{
+        content: '';
+        position: absolute;
+        top: -100%; left: 0;
+        height:100%;
+        width: 100%;
+        background-color: var(--black);
+        z-index: -1;
+        transition: .2s linear;
+      }
+      
+      .button:hover:before{
+        top: 0%;
+      }
+      
+      .button:hover{
+        box-shadow: .1rem .5rem var(--red),
+                    0 .3rem .5rem rgba(0,0,0,.3);
+      }
+
+  
+.message_box .box{
+	margin: 10px 0px;
+    border: 1px solid #2b772e;
+    text-align: center;
+    font-weight: bold;
+    color: #2b772e;
+	}
+.table td {
+	border-bottom:red 1px solid;
+	padding: 10px;
+	}
+.cart_div {
+	float:right;
+	font-weight:bold;
+	position:relative;
+	}
+.cart_div a {
+	color:#000;
+	}	
+.cart_div span {
+	font-size: 12px;
+    line-height: 14px;
+    background: var(--red);
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: 13px;
+    color: #fff;
+    width: 14px;
+    height: 13px;
+    text-align: center;
+	}
+.cart .remove {
+    background: none;
+    border: none;
+    color: #0067ab;
+    cursor: pointer;
+    padding: 0px;
+	}
+.cart .remove:hover {
+	text-decoration:underline;
+	}
+/**/
